@@ -10,7 +10,7 @@ I'm a Business Analytics student and self-taught engineer, and this repo serves 
 
 An analysis of orchestration overhead in serverless ASR systems. Through production telemetry, I identified that orchestration tax, not GPU compute, was the primary bottleneck, and by optimizing segment granularity I achieved a 41% reduction in wall-clock processing time. The paper documents the cost model, the SQL queries used to surface the insight, and the diminishing returns analysis that determined the equilibrium point.
 
-[Read the paper](./latency-as-utility/README.md) · [PDF](./latency-as-utility/latency-as-utility.pdf)
+[Read the paper](./latency-as-utility/latency-as-utility.pdf)
 
 ## Contact
 
