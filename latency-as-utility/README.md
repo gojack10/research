@@ -1,6 +1,31 @@
-# Latency as Utility: Optimizing Serverless ASR Orchestration for Recursive LLM Workflows
+---
+title: "Latency as Utility"
+subtitle: "Optimizing Serverless ASR Orchestration for Recursive LLM Workflows"
+author: "Jack ten Bosch"
+date: "2025-12-11"
+geometry: margin=1in
+fontsize: 11pt
+linestretch: 1.4
+documentclass: article
+numbersections: false
+colorlinks: true
+linkcolor: black
+urlcolor: black
+toc: false
+header-includes:
+  - \usepackage{booktabs}
+  - \usepackage{microtype}
+  - \usepackage{xcolor}
+  - \usepackage{framed}
+  - \usepackage{enumitem}
+  - \definecolor{shadecolor}{RGB}{245,245,245}
+  - \renewenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+  - \setlength{\parskip}{0.5em}
+  - \setlength{\parindent}{0pt}
+  - \setlist[itemize]{topsep=0.5em, itemsep=0.25em}
+---
 
-Jack ten Bosch
+# Latency as Utility: Optimizing Serverless ASR Orchestration for Recursive LLM Workflows
 
 ## Abstract
 
@@ -37,6 +62,7 @@ T_{\text{total}} = T_{\text{cold}} + n \cdot T_{\text{overhead}} + \frac{T_{\tex
 $$
 
 Where:
+
 - $n$ = segment count
 - $T_{\text{overhead}}$ = per-segment orchestration cost (HTTP round-trips, storage I/O, container initialization)
 - $k$ = effective parallelism (determined externally by the cloud provider)
